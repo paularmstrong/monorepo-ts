@@ -1,0 +1,19 @@
+{
+  "name": "package-a",
+  "version": "1.0.0",
+  "description": "Example package A",
+  "author": "Paul Armstrong <paul@spaceyak.com>",
+  "repository": "git@github.com:paularmstrong/monorepo-ts.git",
+  "license": "MIT",
+  "private": true,
+  "main": "dist",
+  "types": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "tsc": "tsc --noEmit"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
